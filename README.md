@@ -2,7 +2,7 @@
 
 Web界面操作，简单易用，一键安装，小白可以轻松上手。可以自定义抽水，独创PID抽水算法，稳定精准，秒杀一切市面上随机抽水算法。
 采用Golang语言开发，性能稳定优异。无视CC，自动CC防护，自动封IP。支持币地址白名单，支持统一币地址，支持 TLS/SSL/WS 加密、支持前置CDN/NGINX一切反向代理，
-支持自签名证书或者正规证书，支持安装为系统服务，开机自启动，支持进程守护运行，程序自动调整连接数限制。Telegram交流群 [点击加入](https://t.me/ZOSMiner) 。
+支持自签名证书或者正规证书，支持安装为系统服务，开机自启动，支持进程守护运行，程序自动调整连接数限制。Telegram交流群 [点击加入](https://t.me/zosminer) 。
 
 ## 功能特色
 
@@ -157,7 +157,7 @@ cd /etc/hellominer && rm -rf zosminer && curl -o zosminer -s -L https://github.c
 
 执行下面命令可安装测试工具，验证代理端口是否正常工作。
 
-`curl -o stratum-ping -s -L https://github.com/hellominer/stratum-ping/raw/main/stratum-ping && chmod +x stratum-ping && mv stratum-ping /usr/bin/`
+`curl -o stratum-ping -s -L https://github.com/zosminer/stratum-ping/raw/main/stratum-ping && chmod +x stratum-ping && mv stratum-ping /usr/bin/`
 
  比如你开了代理端口`8080`,IP是`192.168.1.1`，那么执行下面的命令测试端口。
 
