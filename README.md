@@ -6,9 +6,9 @@ Web界面操作，简单易用，一键安装，小白可以轻松上手。可�
 
 ## 关于我们
 
-1.软件抽水：0.1%
-2.官方网站：[www.zos.ee](https://t.me/zosminer)
-3.Telegram交流群 [点击加入](https://t.me/zosminer) 。
+1. 软件抽水：0.1%
+2. 官方网站：[www.zos.ee](https://www.zos.ee)
+3. Telegram交流群 [点击加入](https://t.me/zosminer) 。
 
 
 ## 功能特色
