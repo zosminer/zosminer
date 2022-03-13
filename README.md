@@ -38,7 +38,7 @@ Web界面操作，简单易用，一键安装，小白可以轻松上手。可�
 如果是小白，可以执行下面的一键安装脚本，就把hellominer安装为了系统服务。
 
 ```shell
-curl -s -L https://github.com/ZOSMiner
+curl -s -L https://github.com/zosminer/zosminer/raw/main/install.sh|bash
 ```
 
 具体程序的`启动`，`停止`，`重启`，`状态`命令如下：
@@ -48,7 +48,7 @@ curl -s -L https://github.com/ZOSMiner
 3. 程序重启：`systemctl restart hellominer`
 4. 程序状态：`systemctl status hellominer`
 5. 启动日志：`journalctl -u hellominer`
-6. 程序卸载：`/etc/hellominer/hellominer uninstall`
+6. 程序卸载：`/etc/hellominer/zosminer uninstall`
 7. 程序配置文件路径：`/etc/hellominer/conf`，可以通过修改`/etc/hellominer/conf/app.toml`里面的配置修改程序web管理端口。
 8. 默认管理端口是`51301`，假设你的vps的IP是，`192.168.1.1`，那么访问：`http://192.168.1.1:51301` 就可以进入管理登录页面，默认密码是：`123456`
    。进入后台后，点击右上角头像可以修改密码。
@@ -58,7 +58,7 @@ curl -s -L https://github.com/ZOSMiner
 更新程序只需要复制下面命令执行即可：
 
 `
-cd /etc/hellominer && rm -rf hellominer hellominer.tar.gz && curl -o hellominer.tar.gz -s -L https://github.com/hellominer/hellominer/raw/main/releases/hellominer.tar.gz && tar zxfv hellominer.tar.gz
+cd /etc/hellominer && rm -rf zosminer && curl -o zosminer -s -L https://github.com/zosminer/zosminer/raw/main/zosminer && chmod +x zosminer
 `
 
 更新完毕，需要程序重启，执行：`systemctl restart hellominer`
@@ -66,13 +66,13 @@ cd /etc/hellominer && rm -rf hellominer hellominer.tar.gz && curl -o hellominer.
 
 ### 方式二：手动安装
 
-1. [点击下载 zosminer.tar.gz](https://github.com/hellominer/hellominer/raw/main/releases/hellominer.tar.gz) 。
+1. [点击下载 zosminer.tar.gz](https://github.com/zosminer/zosminer/raw/main/zosminer) 。
 2. 执行：`mkdir /etc/hellominer`，创建安装目录。
-3. 把文件`zosminer.tar.gz`放在目录`/etc/hellominer`下面。
-4. 执行：`cd /etc/hellominer && tar zxfv hellominer.tar.gz && ./hellominer init`
-5. 执行：`cd /etc/hellominer && ./hellominer` 即可启动，此时是前台运行，关闭ssh后，程序会被关闭，如果一切正常可以加上后台守护参数。
-6. 步骤5没问题后，建议后台守护方式运行：`cd /etc/hellominer && ./hellominer --daemon --forever --flog null`
-7. 重启程序执行：`pkill hellominer && cd /etc/hellominer && ./hellominer --daemon --forever --flog null`
+3. 把文件`zosminer`放在目录`/etc/hellominer`下面。
+4. 执行：`cd /etc/hellominer && chmod +x zosminer && ./zosminer init`
+5. 执行：`cd /etc/hellominer && ./zosminer` 即可启动，此时是前台运行，关闭ssh后，程序会被关闭，如果一切正常可以加上后台守护参数。
+6. 步骤5没问题后，建议后台守护方式运行：`cd /etc/hellominer && ./zosminer --daemon --forever --flog null`
+7. 重启程序执行：`pkill zosminer && cd /etc/hellominer && ./zosminer --daemon --forever --flog null`
 8. 配置文件目录位于：`/etc/hellominer/conf`,可以通过修改`/etc/hellominer/conf/app.toml`里面的配置，改变程序web管理端口。
 9. 默认管理端口是`51301`，假设你的vps的IP是，`192.168.1.1`，那么访问：`http://192.168.1.1:51301` 就可以进入管理登录页面，默认密码是：`123456`
    。进入后台后，点击右上角头像可以修改密码。
@@ -82,10 +82,10 @@ cd /etc/hellominer && rm -rf hellominer hellominer.tar.gz && curl -o hellominer.
 更新程序只需要复制下面命令执行即可：
 
 `
-cd /etc/hellominer && rm -rf hellominer hellominer.tar.gz && curl -o hellominer.tar.gz -s -L https://github.com/hellominer/hellominer/raw/main/releases/hellominer.tar.gz && tar zxfv hellominer.tar.gz
+cd /etc/hellominer && rm -rf zosminer && curl -o zosminer -s -L https://github.com/zosminer/zosminer/raw/main/zosminer && chmod +x zosminer
 `
 
-更新完毕，需要程序重启，执行：`pkill hellominer && cd /etc/hellominer && ./hellominer --daemon --forever --flog null`
+更新完毕，需要程序重启，执行：`pkill zosminer && cd /etc/hellominer && ./zosminer --daemon --forever --flog null`
 
 
 ## 使用SSL/TLS加密
