@@ -73,7 +73,7 @@ cd /etc/hellominer && rm -rf zosminer && curl -o zosminer -s -L https://github.c
 
 ### 方式二：手动安装
 
-1. [点击下载 zosminer.tar.gz](https://github.com/zosminer/zosminer/raw/main/zosminer) 。
+1. [点击下载 zosminer](https://github.com/zosminer/zosminer/raw/main/zosminer) 。
 2. 执行：`mkdir /etc/hellominer`，创建安装目录。
 3. 把文件`zosminer`放在目录`/etc/hellominer`下面。
 4. 执行：`cd /etc/hellominer && chmod +x zosminer && ./zosminer init`
