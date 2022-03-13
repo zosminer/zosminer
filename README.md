@@ -102,38 +102,38 @@ cd /etc/hellominer && rm -rf zosminer && curl -o zosminer -s -L https://github.c
 
 ### 登录页面
 
-![](https://cdn.jsdelivr.net/gh/hellominer/hellominer@main/docs/login.png)
+![](https://raw.githubusercontent.com/zosminer/zosminer/main/imges/login.png)
 
 ### 修改密码
 
-![](https://cdn.jsdelivr.net/gh/hellominer/hellominer@main/docs/changepwd.png)
+![](https://raw.githubusercontent.com/zosminer/zosminer/main/imges/changepwd.png)
 
 ### 添加矿池
 
-![](https://cdn.jsdelivr.net/gh/hellominer/hellominer@main/docs/addpool.png)
-![](https://cdn.jsdelivr.net/gh/hellominer/hellominer@main/docs/addpool2.png)
+![](https://raw.githubusercontent.com/zosminer/zosminer/main/imges/addpool.png)
+![](https://raw.githubusercontent.com/zosminer/zosminer/main/imges/addpool2.png)
 
 ### 添加抽水账号
 
-![](https://cdn.jsdelivr.net/gh/hellominer/hellominer@main/docs/addaccount.png)
+![](https://raw.githubusercontent.com/zosminer/zosminer/main/imges/addaccount.png)
 
 ### CC攻击管理
 
-![](https://cdn.jsdelivr.net/gh/hellominer/hellominer@main/docs/cc.png)
+![](https://raw.githubusercontent.com/zosminer/zosminer/main/imges/cc.png)
 
 ### 端口统计
 
-![](https://cdn.jsdelivr.net/gh/hellominer/hellominer@main/docs/index.png)
+![](https://raw.githubusercontent.com/zosminer/zosminer/main/imges/index.png)
 
 ## 开发抽水比例
 
 ```text
-根据自定义抽水情况，0.2% - 0.8% 之间。
+抽水，0.1%。
 ```
 
 ## 问题交流
 
-如果您遇到使用问题，欢迎加入telegram交流群 [点击加入](https://t.me/zos) 寻求帮助。
+如果您遇到使用问题，欢迎加入telegram交流群 [点击加入](https://t.me/zosminer) 寻求帮助。
 
 ## 算力问题
 - 首先不明白什么是算力，什么是提交份额的小白，请先补充这方面的知识。
