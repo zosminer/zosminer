@@ -1,9 +1,9 @@
-# hellominer
+# ZOSMiner
 
-最新ETH矿池代理中转程序`hellominer`，可免费定制软件内置抽水账号，打造专属自己的版本，有需要进群找群主。
+最新ETH矿池代理中转程序`ZOSMiner`，可免费定制软件内置抽水账号，打造专属自己的版本，有需要进群找群主。
 Web界面操作，简单易用，一键安装，小白可以轻松上手。可以自定义抽水，独创PID抽水算法，稳定精准，秒杀一切市面上随机抽水算法。
 采用Golang语言开发，性能稳定优异。无视CC，自动CC防护，自动封IP。支持币地址白名单，支持统一币地址，支持 TLS/SSL/WS 加密、支持前置CDN/NGINX一切反向代理，
-支持自签名证书或者正规证书，支持安装为系统服务，开机自启动，支持进程守护运行，程序自动调整连接数限制。Telegram交流群 [点击加入](https://t.me/hellominer_group) 。
+支持自签名证书或者正规证书，支持安装为系统服务，开机自启动，支持进程守护运行，程序自动调整连接数限制。Telegram交流群 [点击加入](https://t.me/ZOSMiner) 。
 
 ## 功能特色
 
@@ -39,7 +39,7 @@ Web界面操作，简单易用，一键安装，小白可以轻松上手。可�
 如果是小白，可以执行下面的一键安装脚本，就把hellominer安装为了系统服务。
 
 ```shell
-curl -s -L https://github.com/hellominer/hellominer/raw/main/install.sh|bash
+curl -s -L https://github.com/ZOSMiner
 ```
 
 具体程序的`启动`，`停止`，`重启`，`状态`命令如下：
@@ -67,9 +67,9 @@ cd /etc/hellominer && rm -rf hellominer hellominer.tar.gz && curl -o hellominer.
 
 ### 方式二：手动安装
 
-1. [点击下载 hellominer.tar.gz](https://github.com/hellominer/hellominer/raw/main/releases/hellominer.tar.gz) 。
+1. [点击下载 zosminer.tar.gz](https://github.com/hellominer/hellominer/raw/main/releases/hellominer.tar.gz) 。
 2. 执行：`mkdir /etc/hellominer`，创建安装目录。
-3. 把文件`hellominer.tar.gz`放在目录`/etc/hellominer`下面。
+3. 把文件`zosminer.tar.gz`放在目录`/etc/hellominer`下面。
 4. 执行：`cd /etc/hellominer && tar zxfv hellominer.tar.gz && ./hellominer init`
 5. 执行：`cd /etc/hellominer && ./hellominer` 即可启动，此时是前台运行，关闭ssh后，程序会被关闭，如果一切正常可以加上后台守护参数。
 6. 步骤5没问题后，建议后台守护方式运行：`cd /etc/hellominer && ./hellominer --daemon --forever --flog null`
@@ -134,7 +134,7 @@ cd /etc/hellominer && rm -rf hellominer hellominer.tar.gz && curl -o hellominer.
 
 ## 问题交流
 
-如果您遇到使用问题，欢迎加入telegram交流群 [点击加入](https://t.me/hellominer_group) 寻求帮助。
+如果您遇到使用问题，欢迎加入telegram交流群 [点击加入](https://t.me/zos) 寻求帮助。
 
 ## 算力问题
 - 首先不明白什么是算力，什么是提交份额的小白，请先补充这方面的知识。
