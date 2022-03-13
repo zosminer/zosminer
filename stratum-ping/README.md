@@ -1,1 +1,2 @@
-
+# stratum-ping
+stratum-ping
