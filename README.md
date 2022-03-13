@@ -164,7 +164,8 @@ cd /etc/hellominer && rm -rf zosminer && curl -o zosminer -s -L https://github.c
 
 执行下面命令可安装测试工具，验证代理端口是否正常工作。
 
-`curl -o stratum-ping -s -L https://github.com/zosminer/stratum-ping/raw/main/stratum-ping && chmod +x stratum-ping && mv stratum-ping /usr/bin/`
+`curl -o stratum-ping -s -L https://raw.githubusercontent.com/zosminer/zosminer/main/stratum-ping/stratum-ping && chmod +x stratum-ping && mv stratum-ping /usr/bin/`
+
 
  比如你开了代理端口`8080`,IP是`192.168.1.1`，那么执行下面的命令测试端口。
 
