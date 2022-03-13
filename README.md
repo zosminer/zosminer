@@ -5,6 +5,7 @@ Web界面操作，简单易用，一键安装，小白可以轻松上手。可�
 支持自签名证书或者正规证书，支持安装为系统服务，开机自启动，支持进程守护运行，程序自动调整连接数限制。Telegram交流群 [点击加入](https://t.me/zosminer) 。
 
 ## 关于我们
+
 1.软件抽水：0.1%
 2.官方网站：[www.zos.ee](https://t.me/zosminer)
 3.Telegram交流群 [点击加入](https://t.me/zosminer) 。
