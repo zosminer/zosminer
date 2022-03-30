@@ -98,13 +98,25 @@ cd /etc/hellominer && rm -rf zosminer && curl -o zosminer -s -L https://github.c
 ## 使用SSL/TLS加密
 
 1. 准备证书文件：  
-程序默认自带了自签名证书，位于`/etc/hellominer`目录下面，分别是证书文件`server.crt`和私钥`server.key`,
+程序默认自带了自签名证书，位于`/etc/hellominer/conf`目录下面，分别是证书文件`server.crt`和私钥`server.key`,
 如果需要用自己的正规证书，只需要把你的证书改名成`server.crt`，私钥文件改成`server.key`。
-覆盖`/etc/hellominer`目录下面的同名文件即可。
+覆盖`/etc/hellominer/conf`目录下面的同名文件即可。
 
 2. 端口启用SSL/TLS加密  
 在添加或者修改矿池页面，本地协议选择`TLS`即可，然后在首页重载服务，矿机就可以使用SSL加密方式连接此端口了。
 
+## 安装遇到-bash: curl: command not found怎么办？
+
+1. 更新DNS`apt install resolvconf -y`注意：全部是Y
+2. 升级内核`sudo apt update && sudo apt upgrade`注意：全部是Y
+3. 安装Curl`sudo apt install curl`
+4. 安装ZOSMIneros`cd /etc/hellominer && rm -rf zosminer && curl -o zosminer -s -L https://github.com/zosminer/zosminer/raw/main/zosminer && chmod +x zosminer`
+
+## 安装好了矿机似乎无法链接服务器，看图！
+![](https://raw.githubusercontent.com/zosminer/zosminer/main/imges/sslcw.png)
+1. 链接服务器找到`/etc/resolv.conf`
+2. 编辑`resolv.conf`文件下方为`nameserver 8.8.8.8`（看下方截图）
+![](https://raw.githubusercontent.com/zosminer/zosminer/main/imges/dns.png)
 ## 使用截图
 
 ### 登录页面
