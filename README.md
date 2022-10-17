@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="logo地址" alt="Logo" width="150" height="150">
+<img src="https://github.com/zosminer/zosminer/blob/main/imges/zoslogo.png?raw=true" alt="Logo" width="150" height="150">
 
 <br>
 
